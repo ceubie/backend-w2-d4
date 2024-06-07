@@ -69,8 +69,9 @@ def open():
 def close():
      while True:
         y = input(""" 
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       
               Would you like to:
-            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                
+                       
               1. close a ticket
               2. go back 
 
