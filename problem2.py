@@ -91,10 +91,11 @@ def close():
 def sort():
     for tickets in service_tickets:
             if "open" in service_tickets[tickets]["Status"]:
-                print(tickets)
+                print("-", tickets, "open")
+    print("-" * 30)
     for tickets in service_tickets:
             if "closed" in service_tickets[tickets]["Status"]:
-                print(tickets)
+                print("-", tickets, "closed")
 
 
 #----------------------------------------------------------------------------------------------------------------------
@@ -130,5 +131,7 @@ def ticket():
         else:
             print("Please select a valid number!")
         
+
+ticket()
 #----------------------------------------------------------------------------------------------------------------------
 
