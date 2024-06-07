@@ -37,12 +37,15 @@ service_tickets = {
 def open():
     while True:
         userinput = input(""" 
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                
               Would you like to:
                           
               1. add a ticket
               2. go back 
 
-              --Select a number--""")
+              --Select a number--
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~            
+                          """)
         if userinput == "1":
             tix_num = len(service_tickets) + 1
 
@@ -67,11 +70,13 @@ def close():
      while True:
         y = input(""" 
               Would you like to:
-                          
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                
               1. close a ticket
               2. go back 
 
-              --Select a number--""")
+              --Select a number--
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        
+                  """)
         if y == "1":
                 x = "Ticket" + input("What is your ticket number? ")
                 service_tickets[x]["Status"] = "closed"
@@ -96,6 +101,8 @@ def sort():
 def ticket():
     while True:
         userinput = input("""
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
+
                           Welcome to ticket support. Would you like to: 
 
                           1. open a ticket
@@ -104,7 +111,10 @@ def ticket():
                           4. Sort tickets by status
                           5. exit
 
-                          --Select a number-- """
+                          --Select a number-- 
+                          
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
+                          """
                           )
         if userinput == "1":
             open()
